@@ -25,6 +25,11 @@
           box.style.backgroundColor = "red";
         }
       }
+
+      const radioButtons = document.querySelectorAll('input[name="example"]');
+      radioButtons.forEach((radio) => {
+        radio.addEventListener("click", handleRadioClick);
+      });
     </script>
     <script src="./main.js"></script>
     <script src="./practice1.js"></script>
