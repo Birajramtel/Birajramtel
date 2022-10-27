@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <p>Select an option:</p>
+
+    <div>
+      <input type="radio" id="hide" name="example" value="hide" />
+      <label for="hide">評価(Red)</label>
+    </div>
+
+    <div>
+      <input type="radio" id="show" name="example" value="show" />
+      <label for="show">成績(Yellow)</label>
+    </div>
+
+    <div id="box">Box is now shown</div>
+    <script>
+      const box = document.getElementById("box");
+      function handleRadioClick() {
+        if (document.getElementById("hide").checked) {
+          box.style.backgroundColor = "Yellow";
+        } else {
+          box.style.backgroundColor = "red";
+        }
+      }
+    </script>
+    <script src="./main.js"></script>
+    <script src="./practice1.js"></script>
+    <script src="./practice2.js"></script>
+    <script src="./practice3.js"></script>
+    <script src="./practice4.js"></script>
+  </body>
+</html>
