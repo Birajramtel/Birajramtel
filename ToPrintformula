@@ -1,0 +1,6 @@
+Sub hideandprint()
+    Set sh = ThisWorkbook.Sheets("IT")
+    Sheets("IT").Columns("C:D").Hidden = True
+    ActiveWindow.SelectedSheets.PrintPreview
+    Sheets("IT").Columns("C:D").Hidden = False
+End Sub
